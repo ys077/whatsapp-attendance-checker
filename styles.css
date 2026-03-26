@@ -1,0 +1,186 @@
+:root {
+  --co-outline-variant: 200 197 203;
+  --co-surface-tint: 64 89 170;
+  --co-on-surface-variant: 71 70 75;
+  --co-error: 186 26 26;
+  --co-inverse-primary: 182 196 255;
+  --co-error-container: 255 218 214;
+  --co-on-tertiary-container: 201 106 54;
+  --co-background: 252 249 243;
+  --co-on-primary: 255 255 255;
+  --co-outline: 120 118 124;
+  --co-tertiary-fixed-dim: 255 182 147;
+  --co-on-error: 255 255 255;
+  --co-tertiary: 0 0 0;
+  --co-secondary: 31 108 58;
+  --co-on-tertiary: 255 255 255;
+  --co-surface-container-low: 246 243 237;
+  --co-surface-container: 240 238 232;
+  --co-primary-fixed: 220 225 255;
+  --co-secondary-fixed: 166 244 181;
+  --co-surface-container-highest: 229 226 220;
+  --co-primary-container: 0 22 78;
+  --co-on-primary-fixed-variant: 38 65 145;
+  --co-surface-container-high: 235 232 226;
+  --co-on-primary-container: 103 128 211;
+  --co-on-secondary-container: 36 112 62;
+  --co-secondary-container: 164 241 178;
+  --co-surface-container-lowest: 255 255 255;
+  --co-inverse-surface: 49 49 45;
+  --co-on-tertiary-fixed: 52 16 0;
+  --co-surface: 252 249 243;
+  --co-primary-fixed-dim: 182 196 255;
+  --co-on-secondary: 255 255 255;
+  --co-surface-bright: 252 249 243;
+  --co-on-surface: 28 28 24;
+  --co-secondary-fixed-dim: 139 215 155;
+  --co-on-secondary-fixed-variant: 0 82 38;
+  --co-on-secondary-fixed: 0 33 11;
+  --co-surface-variant: 229 226 220;
+  --co-on-primary-fixed: 0 22 78;
+  --co-tertiary-fixed: 255 219 203;
+  --co-inverse-on-surface: 243 240 234;
+  --co-on-background: 28 28 24;
+  --co-surface-dim: 220 218 212;
+  --co-primary: 0 0 0;
+  --co-on-tertiary-fixed-variant: 122 48 0;
+  --co-tertiary-container: 52 16 0;
+  --co-on-error-container: 147 0 10;
+}
+
+.dark {
+  --co-background: 18 18 18;
+  --co-on-background: 230 230 230;
+  --co-surface-container-lowest: 0 0 0;
+  --co-surface-container-low: 18 18 18;
+  --co-surface-container: 24 24 24;
+  --co-surface-container-high: 32 32 32;
+  --co-surface-container-highest: 40 40 40;
+  --co-surface: 18 18 18;
+  --co-surface-bright: 32 32 32;
+  --co-surface-dim: 15 15 15;
+  --co-surface-variant: 48 48 48;
+  --co-on-surface: 230 230 230;
+  --co-on-surface-variant: 170 170 170;
+  --co-outline: 100 100 100;
+  --co-outline-variant: 60 60 60;
+  --co-primary: 255 255 255;
+  --co-on-primary: 0 0 0;
+  --co-primary-container: 30 45 100;
+  --co-on-primary-container: 200 210 255;
+  --co-primary-fixed: 40 50 120;
+  --co-on-primary-fixed: 200 210 255;
+  --co-on-primary-fixed-variant: 150 160 255;
+  --co-inverse-primary: 38 65 145;
+  --co-secondary: 164 241 178;
+  --co-on-secondary: 0 50 20;
+  --co-secondary-container: 20 70 35;
+  --co-on-secondary-container: 164 241 178;
+  --co-secondary-fixed: 30 80 45;
+  --co-on-secondary-fixed: 200 255 200;
+  --co-on-secondary-fixed-variant: 150 220 160;
+  --co-tertiary: 255 182 147;
+  --co-on-tertiary: 52 16 0;
+  --co-tertiary-container: 122 48 0;
+  --co-on-tertiary-container: 255 182 147;
+  --co-tertiary-fixed: 122 48 0;
+  --co-on-tertiary-fixed: 255 219 203;
+  --co-on-tertiary-fixed-variant: 255 182 147;
+  --co-error: 255 180 171;
+  --co-on-error: 105 0 5;
+  --co-error-container: 147 0 10;
+  --co-on-error-container: 255 180 171;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+.dot-grid {
+  background-image: radial-gradient(circle, #c8c5cb 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.mesh-bg {
+  background:
+    radial-gradient(at 0% 0%, #dce1ff 0%, transparent 50%),
+    radial-gradient(at 100% 0%, #a4f1b2 0%, transparent 50%),
+    radial-gradient(at 100% 100%, #ffdbcb 0%, transparent 50%),
+    radial-gradient(at 0% 100%, #fcf9f3 0%, transparent 50%);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #e5e2dc;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #c8c5cb;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.anim-fade-up {
+  animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.anim-pop {
+  animation: popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+.anim-d1 {
+  animation-delay: 0.05s;
+}
+.anim-d2 {
+  animation-delay: 0.1s;
+}
+.anim-d3 {
+  animation-delay: 0.15s;
+}
+.anim-d4 {
+  animation-delay: 0.2s;
+}
+
+/* Name row interactions */
+.name-row-miss {
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.name-row-miss:hover {
+  transform: translateX(3px);
+}
+.name-row-manual {
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.name-row-manual:hover {
+  transform: translateX(3px);
+}

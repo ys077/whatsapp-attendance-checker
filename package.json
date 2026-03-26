@@ -1,0 +1,10 @@
+{
+  "name": "whatsapp-attendance-checker",
+  "version": "1.0.0",
+  "description": "WhatsApp Attendance Checker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}
