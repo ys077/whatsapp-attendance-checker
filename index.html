@@ -331,7 +331,7 @@
           </div>
         </div>
         <!-- Mobile menu button -->
-        <button class="md:hidden p-2">
+        <button onclick="toggleMobileMenu()" class="md:hidden p-2 hover:bg-surface-container-highest rounded-full transition-colors active:scale-95">
           <span class="material-symbols-outlined text-on-surface">menu</span>
         </button>
       </div>
@@ -1101,6 +1101,57 @@
     >
       <span class="material-symbols-outlined">file_upload</span>
     </button>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="fixed inset-0 z-[100] hidden">
+      <!-- Backdrop -->
+      <div 
+        class="absolute inset-0 bg-background/80 backdrop-blur-sm"
+        onclick="toggleMobileMenu()"
+      ></div>
+      
+      <!-- Drawer Content -->
+      <div class="absolute right-0 top-0 bottom-0 w-72 bg-surface-container-lowest shadow-2xl p-6 anim-slide-left border-l border-outline-variant/10">
+        <div class="flex flex-col h-full">
+          <div class="flex justify-between items-center mb-10">
+            <span class="font-editorial font-black text-xl uppercase tracking-tighter text-on-surface">Menu</span>
+            <button onclick="toggleMobileMenu()" class="p-2 hover:bg-surface-container-highest rounded-full transition-colors active:scale-95">
+              <span class="material-symbols-outlined text-on-surface">close</span>
+            </button>
+          </div>
+          
+          <nav class="flex flex-col gap-2 flex-grow overflow-y-auto custom-scrollbar">
+            <a 
+              class="flex items-center gap-4 px-4 py-3 rounded-xl font-editorial font-bold text-lg text-on-surface transition-all hover:bg-primary/5 active:scale-95 cursor-pointer group"
+              onclick="switchTab('dashboard'); toggleMobileMenu();"
+            >
+              <span class="material-symbols-outlined group-hover:scale-110 transition-transform">dashboard</span>
+              Dashboard
+            </a>
+            <a 
+              class="flex items-center gap-4 px-4 py-3 rounded-xl font-editorial font-bold text-lg text-on-surface/60 transition-all hover:bg-primary/5 active:scale-95 cursor-pointer group"
+              onclick="switchTab('roster'); toggleMobileMenu();"
+            >
+              <span class="material-symbols-outlined group-hover:scale-110 transition-transform">groups</span>
+              Roster
+            </a>
+            <a 
+              class="flex items-center gap-4 px-4 py-3 rounded-xl font-editorial font-bold text-lg text-on-surface/60 transition-all hover:bg-primary/5 active:scale-95 cursor-pointer group"
+              onclick="switchTab('analytics'); toggleMobileMenu();"
+            >
+              <span class="material-symbols-outlined group-hover:scale-110 transition-transform">analytics</span>
+              Analytics
+            </a>
+          </nav>
+          
+          <div class="pt-6 border-t border-outline-variant/10">
+            <p class="font-mono text-[10px] uppercase tracking-widest text-on-surface/40 px-4">
+              © 2026 AttendSync Ledger
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Link to external JavaScript file -->
     <script src="script.js"></script>

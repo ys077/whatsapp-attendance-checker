@@ -185,6 +185,19 @@
   cursor: pointer;
   transition: all 0.15s;
 }
-.name-row-manual:hover {
+.anim-row-manual:hover {
   transform: translateX(3px);
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.anim-slide-left {
+  animation: slideLeft 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
 }

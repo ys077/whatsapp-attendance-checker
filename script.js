@@ -9,6 +9,18 @@ function toggleDarkMode(checkbox) {
   }
 }
 
+function toggleMobileMenu() {
+  const menu = document.getElementById("mobileMenu");
+  const isHidden = menu.classList.contains("hidden");
+  if (isHidden) {
+    menu.classList.remove("hidden");
+    document.body.style.overflow = "hidden"; // Prevent scroll when menu is open
+  } else {
+    menu.classList.add("hidden");
+    document.body.style.overflow = "";
+  }
+}
+
 function toggleDropdown(id) {
   if (event) event.stopPropagation();
   const el = document.getElementById(id);
